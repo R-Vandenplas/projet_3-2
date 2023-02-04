@@ -1,8 +1,18 @@
 package projet3_2;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Employe {
     private int id;
-    private String mail,nom,prenom;
+    private String mail;
+    private String nom;
+    private String prenom;
+
+    private Service service;
+    private List<Message>msg =new ArrayList<>();
+
 
     public Employe(int id, String mail, String nom, String prenom) {
         this.id = id;
